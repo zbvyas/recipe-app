@@ -30,6 +30,8 @@ export class RecipeService {
     return this.recipes.slice(); // returns a copy so that original array is not manipulated
   }
 
-  
+  getRecipe(id: number) {
+    return this.recipes[id];
+  }
 
 }
